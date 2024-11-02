@@ -1,0 +1,26 @@
+:root {
+  // colors
+  --color-body-bg: #373e45;
+  --color-thead: rgba(255, 255, 255, 0.04);
+  --colot-tborder: rgba(255, 255, 255, 0.1);
+
+  --color-text-main: #ffffff;
+  --color-text-tr30: #ffffff4d;
+  --color-text-tr40: #ffffff66;
+
+  // fonts
+  --font-family-main: 'Inter', Arial, Helvetica, sans-serif;
+
+  // common
+  --border-radius-body: 40px;
+  --border-radius-table: 8px;
+
+  // --desktop-max-width: 1280px;
+  // --container-max-width: 1040px;
+  // --container-width: 1130px;
+  // --side-spacing: 75px;
+  // --navbar-height: 90px;
+
+  // effects
+  --transition-duration: 0.3s;
+}
