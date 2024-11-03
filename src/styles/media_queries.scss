@@ -1,17 +1,76 @@
 @media (hover: hover) {
+  #root {
+    table {
+      .user__email {
+        transition: color var(--transition-duration);
+
+        &:hover {
+          color: var(--color-text-main);
+        }
+      }
+    }
+  }
 }
-
-// @media screen and (min-width: 1281px) {
-// }
-
-// @media screen and (max-width: 1250px) {
-// }
 
 @media screen and (max-width: 992px) {
+  #root {
+    .header {
+      letter-spacing: 0;
+    }
+  }
 }
 
-// @media screen and (max-width: 920px) {
-// }
-
 @media screen and (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+
+  #root {
+    padding: 57px 40px 65px;
+
+    .header {
+      font-size: 24px;
+      letter-spacing: 0.036em;
+    }
+
+    .subheader {
+      margin-bottom: 25px;
+    }
+
+    table {
+      th {
+        font-size: 8px;
+
+        &:nth-child(1) {
+          min-width: 36px;
+        }
+
+        &:nth-child(3) {
+          min-width: 86px;
+        }
+      }
+
+      td {
+        height: 56px;
+
+        &:nth-child(3) {
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+
+      .user {
+        column-gap: 10px;
+
+        &__icon {
+          width: 28px;
+          height: 28px;
+        }
+
+        &__email {
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,22 @@
+.header {
+  font-family: var(--font-family-header);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  letter-spacing: 0.036em;
+}
+
+.subheader {
+  line-height: 1.5;
+  letter-spacing: 0.011em;
+  margin-bottom: 48px;
+  color: var(--color-text-tr30);
+}
+
+.table-wrapper {
+  width: 100%;
+  border: var(--table-border);
+  border-radius: 8px;
+  overflow: hidden;
+}

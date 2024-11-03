@@ -1,0 +1,81 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    height: 31px;
+    background: var(--color-t-head-bg);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-tr30);
+    text-align: left;
+
+    &:nth-child(1) {
+      min-width: 46px;
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      width: 100%;
+      padding-left: 12px;
+    }
+
+    &:nth-child(3) {
+      min-width: 168px;
+      padding-left: 13px;
+    }
+  }
+
+  td {
+    height: 80px;
+
+    &:nth-child(1) {
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      padding-left: 8px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 13px;
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-weight: 500;
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__name {
+      line-height: 1.25;
+      letter-spacing: 0.011em;
+      margin-bottom: 4px;
+    }
+
+    &__email {
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.008em;
+      color: var(--color-text-tr40);
+    }
+  }
+
+  tr {
+    border-bottom: var(--table-border);
+
+    &:first-child,
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

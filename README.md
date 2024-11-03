@@ -8,6 +8,7 @@
 
 > - **HTML**
 > - **SCSS**
+> - **PerfectPixel**
 > - **TypeScript**
 > - **React**
 > - **Vite**
