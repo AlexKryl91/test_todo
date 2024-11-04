@@ -5,3 +5,7 @@ export interface IUser {
   email: string;
   count: number;
 }
+
+export interface ITodo {
+  userId: number;
+}

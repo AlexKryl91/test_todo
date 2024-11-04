@@ -1,0 +1,27 @@
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 160px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 16px solid;
+  border-color: #fff #fff0;
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
