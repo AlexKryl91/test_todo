@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import './App.scss';
 import Table from './Table/Table';
 import { IUser } from '../types/types';
-import fetchUsers from '../API/FetchUsers';
+import fetchData from '../API/fetchData';
 import mergeData from '../utils/mergeData';
 import Loader from './Loader/Loader';
+import errorHandler from '../utils/errorHandler';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -12,9 +13,12 @@ const App = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetchUsers()
-      .then((data) => setUsers(mergeData(data)))
-      .then(() => setIsLoading(false));
+    fetchData()
+      .then((data) => {
+        setUsers(mergeData(data));
+        setIsLoading(false);
+      })
+      .catch((err) => errorHandler(err));
   }, []);
 
   return (
