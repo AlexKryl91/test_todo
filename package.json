@@ -1,8 +1,9 @@
 {
   "name": "test_todo",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://alexkryl91.github.io/test_todo",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
