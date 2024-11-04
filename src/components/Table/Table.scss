@@ -37,7 +37,7 @@ table {
     }
 
     &:nth-child(2) {
-      padding-left: 8px;
+      padding-inline: 8px;
     }
 
     &:nth-child(3) {
@@ -46,10 +46,12 @@ table {
   }
 
   .user {
+    width: 100%;
     display: flex;
     align-items: center;
     column-gap: 16px;
     font-weight: 500;
+    white-space: nowrap;
 
     &__icon {
       width: 40px;
